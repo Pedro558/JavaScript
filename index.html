@@ -20,16 +20,8 @@
 	</script>
 	-->
 <body>
-	
-
-	<script type="text/javascript">
-		function fontDefault(){
-			document.getElementById('font').innerHTML = "This is a text";
-		}
-	</script>
 
 	<h1>Boa tarde consagrado !</h1>
-
 	<p id="font">This is a text</p>
 
 	<button type="button" onclick="document.getElementById('font').style.fontSize='35px'">Click to Grow</button>
@@ -41,6 +33,7 @@
 
 	<br><br>
 
+<!--ARRAY-->
 	<script type="text/javascript">
 		var lista_coisas = Array();
 
@@ -52,6 +45,20 @@
 		lista_coisas['pessoas'][3] = 'Maria';
 
 		document.write(lista_coisas['pessoas'][3]);
+		document.write(lista_coisas['frutas'][0]);
 	</script>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var x, y;
+		x = 10 + 5;
+		total = x * 20;
+		document.getElementById("demo").innerHTML = "Total = "+ total;
+	</script>
+
+	<h1>DIFERENÇA</h1>
+
+
 </body>
 </html>
