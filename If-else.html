@@ -10,13 +10,24 @@
 
 	<script type="text/javascript">
 		var nota = prompt ('Digite a nota do aluno');
+		var faltas = prompt ('Digite a qntd de faltas do aluno');
 		var media = 7;
-
-		if (nota >= media) {
+		var falta_limite = 15;
+	
+		if (nota >= media && faltas <= falta_limite) {
 			document.write("Aprovado");
 		} else {
 			document.write("Reprovado");
 		}
+	
+
+	/*
+	if (!(3 == 2)){
+		document.write("True");
+	} else{
+		document.write("False");
+	}
+	*/
 	</script>
 </head>
 
