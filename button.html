@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
-	<title>Javascript</title>
+	<title>Button</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<script type="text/javascript">
 		function fontDefault(){
 			document.getElementById('font').innerHTML = "This is a text";
@@ -15,29 +15,17 @@
 		function msgOne(){document.getElementById('font').innerHTML = 'Eu quero jogar PxG';}
 		function msgTwo(){document.getElementById('font').innerHTML = 'Eu preciso estudar';}
 	</script>
+</head>
 
-	<!--
-	<h1>Bom dia consagrado !</h1>
-	<script type="text/javascript">
-		var texto = "Olá, a sua idade é: ";
-		var idade = prompt("Digite sua idade");
-		document.write(texto + idade);
-	</script>
-	-->
 <body>
+<p id="font">This is a text</p>
 
-	<h1>Boa tarde consagrado !</h1>
-
+	<button type="button" onclick="document.getElementById('font').style.fontSize='35px'">Click to Grow</button>
+	<button type="button" onclick="document.getElementById('font').style.fontSize='16px'">Click to Decrease</button>
 	<br><br>
-
-	<p id="demo"></p>
-
-	<script type="text/javascript">
-		var x, y;
-		x = 10 + 5;
-		total = x * 20;
-		document.getElementById("demo").innerHTML = "Total = "+ total;
-	</script>
+	<button type="button" onclick="msgOne()">Show message 1</button>
+	<button type="button" onclick="msgTwo()">Show message 2</button>
+	<button type="button" onclick="fontDefault()">Show message defaut</button>
 </body>
-</html>
 
+</html>

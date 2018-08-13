@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+	<title>Arrays</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<script type="text/javascript">
+	//ARRAY SIMPLES
+	var lista_coisas = Array();
+
+	lista_coisas = Array('Joao', 'Pedro', 'Thiago');
+	document.write(lista_coisas[1]);
+	document.write("<br>abc");
+
+	//ARRAY MULTIDIMENSIONAL
+	var lista_coisas = Array();
+
+	lista_coisas['frutas'] = Array ('Banana', 'Maçã', 'Laranja');
+	lista_coisas['pessoas'] = Array ();
+	lista_coisas['pessoas'][1] = 'João';
+	lista_coisas['pessoas'][2] = 'Pedro';
+	lista_coisas['pessoas'][3] = 'Maria';
+
+	document.write("<br>");
+	document.write(lista_coisas['pessoas'][3]);
+	document.write("<br>");
+	document.write(lista_coisas['frutas'][0]);
+	document.write("<br>Lalala");
+	</script>
+</body>
+</html>
