@@ -9,17 +9,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<script type="text/javascript">
-		var nota = prompt ('Digite a nota do aluno');
+		var opcao = parseInt(prompt('Digite uma opcao: 1-Jogar   2- Sair   3-Creditos'));
+
+
+		switch(opcao){
+			case 1:
+				document.write("Loading...");
+				break;
+
+			case 2:
+				document.write("Exiting...");
+				break;
+
+			case 3:
+				document.write("Now the world don't move");
+				break;
+
+			default:
+				document.write("Type a valid option")
+		}
+
+		/*var nota = prompt ('Digite a nota do aluno');
 		var faltas = prompt ('Digite a qntd de faltas do aluno');
 		var media = 7;
 		var falta_limite = 15;
 	
 		if (nota >= media && faltas <= falta_limite) {
 			document.write("Aprovado");
+			document.write("<br>" + typeof nota + " " + typeof faltas + " " + typeof media);
 		} else {
 			document.write("Reprovado");
 		}
-	
+		*/
 
 	/*
 	if (!(3 == 2)){
