@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+	<title>Repetição</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<script type="text/javascript">
+		//WHILE
+		var x = 1;
+		document.write("WHILE<br><br>")
+		while(x <= 10){
+			document.write(x + "<br>");
+			if(x % 2 == 0){
+				document.write("Number "+ x +" is pair<br>");
+			} else{
+				document.write("Number "+ x +" is odd<br>")
+			}
+			x++;
+		}
+		document.write("<br><br>DO WHILE<br><br>")
+		//DO WHILE
+		var x = 10;
+		do{
+			document.write(x + "<br>");
+			x--;
+		} while(x >= 1);
+
+
+		//FOR
+		document.write("<br><br>FOR<br><br>")
+		for (var x = 50; x >= 40; x--) {
+			document.write(x + "<br>");
+		}
+
+	</script>
+</body>
+
+</html>
