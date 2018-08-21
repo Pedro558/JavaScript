@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+	<title>Repetição</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<script type="text/javascript">
+		function myClick(){alert("Mensagem do OnClick")}
+		function myDbl(){alert("Mensagem do DoubleClick")}
+		function myDown(){alert("Mensagem do mousedown")}
+		function myOver(){alert("Mensagem do mouseover")}
+		function myOut(){alert("Mensagem do mouseout")}
+	</script>
+
+	<style type="text/css">
+		.click, .doubleclick, .mousedown, .mouseover, .mouseout{
+			height: 100px;
+			width: 300px;
+			background: black;
+			color:white;
+			text-align: center;
+			padding-top: 100px;
+			display: inline-block;
+			margin-left: 5px;
+			border-radius: 6px;
+		}
+	</style>
+</head>
+
+<body onload="alert('Página carregada com sucesso')"
+onresize="console.log('A página foi redimensionada')">
+<h1>Events Mouse</h1>
+<div class="click" onclick="myClick()">OnClick</div>
+<div class="doubleclick" ondblclick="myDbl()">Double Click</div>
+<div class="mousedown" onmousedown="myDown()">MouseDown</div>
+<div class="mouseover" onmouseover="myOver()">MouseOver</div>
+<div class="mouseout" onmouseout="myOut()">MouseOut</div>
+
+<br><br>
+<h1>Events Teclado</h1>
+<h2>OnKeyDown</h2>
+<input type="text" onkeydown="alert('Tecla pressionada')">
+<h2>OnKeyPress</h2>
+<input type="text" onkeypress="alert('Tecla pressionada (não captura teclas especiais)')">
+<h2>OnKeyUp</h2>
+<input type="text" onkeyup="alert('Tecla liberada')">
+
+
+<br><br>
+<h1>Events Formulários</h1>
+<h2>OnClick</h2>
+<input type="text" onclick="alert('O elemento foi focado')">
+<h2>Onblur</h2>
+<input type="text" onblur="alert('O elemento foi desfocado')">
+<h2>OnChange</h2>
+<select onchange="alert('Opção alterada')" style="width:150px; height: 25px">
+	<option value="1">Primeiro</option>
+	<option value="2">Segundo</option>
+</select>
+<br><br><br><br><br><br>
+</body>
+
+</html>
