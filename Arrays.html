@@ -11,7 +11,7 @@
 <body>
 	<script type="text/javascript">
 	//ARRAY SIMPLES
-	var lista_coisas = Array();
+	/*var lista_coisas = Array();
 
 	lista_coisas = Array('Joao', 'Pedro', 'Thiago');
 	document.write(lista_coisas[1]);
@@ -30,7 +30,32 @@
 	document.write(lista_coisas['pessoas'][3]);
 	document.write("<br>");
 	document.write(lista_coisas['frutas'][0]);
-	document.write("<br>Lalala");
+	document.write("<br>Lalala");*/
+
+	/*var countries = ["Brazil", "England", "Germany", "Chile"];
+	for(i = 0; i < countries.length; i++){
+		document.write(countries[i] + "<br>");
+	}*/
+
+	/*var people = {
+		firstname: "Pedro",
+		lastname: "Afonso",
+		age: "18",
+		mensagem: function(){
+			return alert("A ferro e fogo não dá !");
+		}
+	};
+	console.log(people.mensagem());
+	document.write(people.firstname + " " + people.lastname + " is " + people.age + " years old");*/
+
+	var frutas = ['Banana', 'Maçã', 'Laranja'];
+	frutas.push("Kiwi");
+	frutas.push("Morango");
+	document.write("O tamanho do array é " + frutas.length + ". São eles: <br>");
+	for(i = 0; i < frutas.length; i++){
+		document.write(frutas[i] + "<br>");
+	}
+
 	</script>
 </body>
 </html>
