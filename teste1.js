@@ -1,17 +1,17 @@
-alert('Voc\u00ea est\u00e1 em uma trap maculmunada pelo javascript')
+/*let nome = prompt('Olá, digite seu nome: ');
+let idade = parseInt(prompt("Digite sua idade"));
+let texto = "Seu nome é " + nome + " e sua idade é " + idade;
+document.write(texto);
 
-//Comentário de uma linha
-aaaa
-/*Comentário de + de 1x linha*/
+const example = 0.5;
+console.log(example);
 
-//String
-var texto = "Isso é um texto"
+let person = {
+  name: nome,
+  age: idade
+};
+console.log(person);*/
 
-//Float
-var numFracionado = 7.55;
-
-//Int
-var numInteiro = 8;
-
-//Boolean
-var teste = true; //poderia ser false tmb
+let SelectedColors = ["red", "blue"];
+SelectedColors[2] = "green";
+console.log(SelectedColors);
